@@ -1,3 +1,5 @@
+@import 'variables';
+
 *,
 *::before,
 *::after {
@@ -23,16 +25,16 @@ html, body {
 
         .one {
             display: flex;
-            align-items: center;
 
             ul {
                 display: flex;
+                align-items: center;
 
                 a {
                     text-decoration: none;
 
                     li {
-                        color: #373737;
+                        color: $primary-font;
                         margin: 0 1.5rem;
                         list-style: none;
                         font-size: 2rem;
@@ -50,7 +52,7 @@ html, body {
             ul {
                 a {
                     button {
-                        color: #373737;
+                        color: $primary-font;
                         font-family: cursive;
                         outline: none;
                         border: none;
@@ -68,7 +70,7 @@ html, body {
                     #signup {
                         height: 5rem;
                         width: 15rem;
-                        background: #8264ff;
+                        background: $primary-color;
                         border-radius: 50px;
                         font-size: 1.5rem;
                         color: #fff;
@@ -81,7 +83,7 @@ html, body {
     .home {
         min-height: 85vh;
         max-height: auto;
-        background: #8264ff;
+        background: $primary-color;
 
         .top {
             min-height: 85vh;
@@ -121,7 +123,7 @@ html, body {
                         height: 5rem;
                         width: 15rem;
                         background: #fff;
-                        color: #373737;
+                        color: $primary-font;
                         font-size: 1.7rem;
                     }
                 }
