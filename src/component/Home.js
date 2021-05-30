@@ -1,8 +1,8 @@
 
-
 const Home = () => {
     return (
         <div className='home'>
+            
             <div className='top'>
                 <div className='one'>
                     <div className='title'>
@@ -27,7 +27,53 @@ const Home = () => {
             </div>
 
             <div className='mid'>
-                
+                <div className='one'>
+                    <h1>Grow Your Empire</h1>
+                    <p>
+                        In under 5 Minutes, set up your Investment Account.
+                        You can also set up a Checking Account. Grow your
+                        wealth, with Babylon; you will be beating inflation
+                        everyday.
+                    </p>
+                </div>
+
+                <div className='two'>
+                    <div className='card'>
+                        <div className='container'>
+                            <div className='box'>
+                                <i class="far fa-smile-wink"></i>
+                                <h1>Easy</h1>
+                            </div>
+                            <p>
+                                Invest your money automatically, set aside 
+                                money from each paycheck, earn more and get 
+                                money tips on the go.
+                            </p>
+                        </div> 
+                        <div className='container'>
+                            <div className='box'>
+                                <i class="far fa-thumbs-up"></i>
+                                <h1>Smart</h1>
+                            </div>
+                            <p>
+                                Access smart portfolios designed by 
+                                the experts, that adjust automatically
+                                as you and your money grow.
+                            </p>
+                        </div>
+                        <div className='container'>
+                            <div className='box'>
+                                <i class="fas fa-lock"></i>
+                                <h1>Trusted</h1>
+                            </div>
+                            <p>
+                                Backed by leading investors and 
+                                innovators, from Blackrock to CNBC,
+                                and chosen by more than 8 Million people.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

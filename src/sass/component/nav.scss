@@ -1,0 +1,98 @@
+.navbar {
+    height: 15vh;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    @include respond(phone) {
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .one {
+        display: flex;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+
+                .link {
+                    color: $primary-font;
+                    margin: 0 1.5rem;
+                    list-style: none;
+                    font-size: 2rem;
+                    font-family: Fredoka One;
+
+                    @include respond(phone) {
+                        display: none;
+                    }
+                }
+
+                #logo {
+                    color: $primary-font;
+                    margin: 0 1.5rem;
+                    font-size: 2rem;
+
+                    @include respond(phone) {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .two {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include respond(phone) {
+            display: none;
+        }
+
+        ul {
+            a {
+                button {
+                    color: $primary-font;
+                    font-family: cursive;
+                    outline: none;
+                    border: none;
+                    margin: 0 0.5rem;
+                    cursor: pointer;
+                    font-size: 2rem;
+                    font-family: Fredoka One;
+                }
+
+                #login {
+                    height: 3rem;
+                    width: 10rem;
+                    background: inherit;
+                }
+
+                #signup {
+                    height: 5rem;
+                    width: 15rem;
+                    background: $primary-color;
+                    border-radius: 50px;
+                    font-size: 1.5rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .burger {
+        display: none;
+
+        @include respond(phone) {
+            display: inline;
+            font-size: 3rem;
+            align-self: center;
+            margin: 0 1.5rem;
+        }
+    }
+}

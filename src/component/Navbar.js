@@ -6,10 +6,10 @@ const Navbar = () => {
             <div className='one'>
                 <ul>
                     <Link to='/'><li><i id='logo' class="fas fa-chess-rook"></i></li></Link>
-                    <Link to='/'><li>Home</li></Link>
-                    <Link to='/Invest'><li>Investing</li></Link>
-                    <Link to='/Bank'><li>Banking</li></Link>
-                    <Link to='/Education'><li>Education</li></Link>
+                    <Link to='/'><li class='link'>Home</li></Link>
+                    <Link to='/Invest'><li class='link'>Investing</li></Link>
+                    <Link to='/Bank'><li class='link'>Banking</li></Link>
+                    <Link to='/Education'><li class='link'>Education</li></Link>
                 </ul>
             </div>
 
@@ -27,6 +27,10 @@ const Navbar = () => {
                         </button>
                     </Link>
                 </ul>
+            </div>
+
+            <div className='burger'>
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     )

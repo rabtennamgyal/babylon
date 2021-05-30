@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from './component/Navbar'
+import NavMobile from './component/NavMobile'
 import Home from './component/Home'
 
 function App() {

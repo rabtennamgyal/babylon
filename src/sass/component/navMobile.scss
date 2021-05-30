@@ -1,0 +1,11 @@
+.navMobile {
+    position: fixed;
+    background: $primary-color;
+    top: 0rem;
+    left: 0;
+    z-index: 10;
+    height: 90vh;
+    width: 20vw;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
