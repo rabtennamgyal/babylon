@@ -6,9 +6,21 @@
 769px — 1024px: Small screens, laptops.
 1025px — 1200px: Desktops, large screens.
 1201px and more — Extra large screens, TV.
+
+My Specifications:
+
+Middle: 697px - 819px: 
 */
 
 @mixin respond($breakpoint) {
+    @if $breakpoint == mid {
+        @media (min-width: 697px) and (max-width: 819px) {
+            @content;
+        }
+    }
+
+
+
     @if $breakpoint == phone {
         @media (min-width: 320px) and (max-width: 700px) {
             @content;

@@ -41,7 +41,7 @@ const Home = () => {
                     <div className='card'>
                         <div className='container'>
                             <div className='box'>
-                                <i class="far fa-smile-wink"></i>
+                                <i className="far fa-smile-wink"></i>
                                 <h1>Easy</h1>
                             </div>
                             <p>
@@ -52,7 +52,7 @@ const Home = () => {
                         </div> 
                         <div className='container'>
                             <div className='box'>
-                                <i class="far fa-thumbs-up"></i>
+                                <i className="far fa-thumbs-up"></i>
                                 <h1>Smart</h1>
                             </div>
                             <p>
@@ -63,7 +63,7 @@ const Home = () => {
                         </div>
                         <div className='container'>
                             <div className='box'>
-                                <i class="fas fa-lock"></i>
+                                <i className="fas fa-lock"></i>
                                 <h1>Trusted</h1>
                             </div>
                             <p>

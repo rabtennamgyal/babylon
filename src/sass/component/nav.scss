@@ -17,6 +17,17 @@
             display: flex;
             align-items: center;
 
+            h1 {
+                display: none;
+
+                @include respond(phone) {
+                    color: $primary-color;
+                    font-family: Hind Siliguri;
+                    font-size: 3rem;
+                    display: inline;
+                }
+            }
+
             a {
                 text-decoration: none;
 
@@ -33,7 +44,7 @@
                 }
 
                 #logo {
-                    color: $primary-font;
+                    color: $primary-color;
                     margin: 0 1.5rem;
                     font-size: 2rem;
 
@@ -80,6 +91,10 @@
                     border-radius: 50px;
                     font-size: 1.5rem;
                     color: #fff;
+
+                    @include respond(mid) {
+                        width: 10rem;
+                    }
                 }
             }
         }

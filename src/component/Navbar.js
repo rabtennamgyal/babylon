@@ -1,15 +1,16 @@
 import {Link} from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({openNav}) => {
     return (
         <nav className='navbar'>
             <div className='one'>
                 <ul>
-                    <Link to='/'><li><i id='logo' class="fas fa-chess-rook"></i></li></Link>
-                    <Link to='/'><li class='link'>Home</li></Link>
-                    <Link to='/Invest'><li class='link'>Investing</li></Link>
-                    <Link to='/Bank'><li class='link'>Banking</li></Link>
-                    <Link to='/Education'><li class='link'>Education</li></Link>
+                    <Link to='/'><li><i id='logo' className="fas fa-chess-rook"></i></li></Link>
+                    <Link to='/'><li className='link'>Home</li></Link>
+                    <Link to='/Invest'><li className='link'>Investing</li></Link>
+                    <Link to='/Bank'><li className='link'>Banking</li></Link>
+                    <Link to='/Education'><li className='link'>Education</li></Link>
+                    <h1>Babylon</h1>
                 </ul>
             </div>
 
@@ -30,7 +31,7 @@ const Navbar = () => {
             </div>
 
             <div className='burger'>
-                <i class="fas fa-bars"></i>
+                <i onClick={openNav} className="fas fa-bars"></i>
             </div>
         </nav>
     )
