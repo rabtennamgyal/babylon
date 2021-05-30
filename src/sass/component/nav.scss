@@ -41,6 +41,10 @@
                     @include respond(phone) {
                         display: none;
                     }
+
+                    @include respond(mid) {
+                        margin: 0 1rem;
+                    }
                 }
 
                 #logo {
