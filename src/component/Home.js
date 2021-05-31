@@ -1,5 +1,11 @@
+import warren from '../Asset/buffet.jpg_background=000000&cropX1=748&cropX2=3075&cropY1=1753&cropY2=4082';
+import jack from '../Asset/bogle.jpg';
+import charlie from '../Asset/munger.jpeg';
+
 
 const Home = () => {
+
+
     return (
         <div className='home'>
             
@@ -22,7 +28,7 @@ const Home = () => {
                 </div>
                 
                 <div className='two'>
-    
+                    
                 </div>
             </div>
 
@@ -78,13 +84,13 @@ const Home = () => {
 
             <div className='bottom'>
                 <div className='img'>
-                    <i className="fas fa-chess-rook"></i>
+                    <i id='lock' className="fas fa-chess-rook"></i>
                 </div>
 
                 <div className='text'>
                     <div className='item'>
                         <h1>
-                            Our security is as strong as a Fort.
+                            Our security is as strong as a <span id='fort'>Fort.</span>
                         </h1>
                         <p>
                             We use Bank-level security, 256-bit
@@ -93,6 +99,49 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div className='slider'>
+                    <div className='left'>
+                        <p>&larr;</p>
+                    </div>
+
+                <div className='slides'>
+                        <div className='box one'>
+                            <img class='img' src={warren} />
+                            <p>
+                                "I use Babylon everyday, the reason I'm the 
+                                great Investor I am today is because of Babylon.
+                                I Love Babylon."
+                            </p>
+                        </div>
+        
+                        <div className='box two'>
+                            <img class='img' src={jack} />
+                            <p>
+                                "If I have to choose between an Index Fund and Babylon,
+                                I'll choose Babylon. It is miles better than any Index 
+                                Fund, go Babylon."
+                            </p>
+                        </div>
+        
+                        <div className='box three'>
+                            <img class='img' src={charlie} />
+                            <p>
+                                "I once told Warren to check out this new site called
+                                Babylon. And he did, look where he is now, all thanks to
+                                Babylon."
+                            </p>
+                        </div>
+                </div>
+
+                    <div className='right'>
+                        <p>&rarr;</p>
+                    </div>
+            </div>
+
+            <div className='footer'>
+
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ const NavMobile = ({closeNav}) => {
     return (
         <div className='navMobile'>
             <div className='closeBtn' >
-                <Link to='/'><li><i id='logo' className="fas fa-chess-rook"></i></li></Link>
+                <Link to='/'><li><i onClick={closeNav} id='logo' className="fas fa-chess-rook"></i></li></Link>
                 <p onClick={closeNav}>&times;</p>
             </div>
 

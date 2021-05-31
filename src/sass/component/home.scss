@@ -76,7 +76,8 @@
     
     // 2nd div
     .mid {
-        height: 80vh;
+        min-height: 80vh;
+        max-height: auto;
         background: #fff;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -189,19 +190,34 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+        @include respond(phone) {
+            height: 70vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr;
+        }
+
         .img {
             display: grid;
             place-items: center;
 
-            i {
+            #lock {
                 color: #fff;
-                font-size: 15rem
+                font-size: 15rem;
+
+                @include respond(phone) {
+                    font-size: 8rem;
+                }
             }
         }
 
         .text {
             display: grid;
             place-items: center;
+
+            @include respond(phone) {
+                justify-content: center;
+                align-items: flex-start;
+            }
 
             .item {
                 display: grid;
@@ -213,6 +229,15 @@
                     color: #fff;
                     font-family: Hind Siliguri;
                     font-size: 3.5rem;
+
+                    @include respond(phone) {
+                        display: grid;
+                        font-size: 2.5rem;
+
+                        #fort {
+                            justify-self: center;
+                        }
+                    }
                 }
 
                 p {
@@ -223,5 +248,73 @@
                 }
             }
         }
+    }
+
+    // 4th Div
+    .slider {
+        position: relative;
+        height: 100vh;
+        background: #fff;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        padding: 2rem 0;
+
+        .left {
+            cursor: pointer;
+            justify-self: left;
+            color: #fff;
+            position: absolute;
+            font-size: 3rem;
+            border-radius: 50px;
+            background: #000000;
+            padding: 1rem;
+            margin: 0 1rem;
+        }
+
+        .right {
+            cursor: pointer;
+            justify-self: right;
+            color: #fff;
+            position: absolute;
+            font-size: 3rem;
+            border-radius: 50px;
+            background: #000000;
+            padding: 1rem;
+            margin: 0 1rem;
+        }
+
+        .slides {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            border-radius: 20px;
+            height: 100%;
+            width: 70%;
+            margin: auto;
+            display: flex;
+            overflow: hidden;
+
+            .box {
+                border: none;
+                width: 100%;
+                
+                .img {
+                    width: 90rem;
+                    height: 90%;
+                }
+
+                p {
+                    display: grid;
+                    place-items: center;
+                    font-size: 1.9rem;
+                    font-family: Hind Siliguri;
+                    color: $primary-font;
+                }
+            }
+        }
+    }
+
+    // 5th div
+    .footer {
+        height: 60vh;
     }
 }
