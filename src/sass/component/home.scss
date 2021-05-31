@@ -3,6 +3,7 @@
     max-height: auto;
     background: $primary-color;
 
+    // 1st div
     .top {
         min-height: 85vh;
         max-height: auto;
@@ -10,6 +11,11 @@
         grid-template-columns: repeat(2, 1fr);
 
         @include respond(phone) {
+            min-height: 60vh;
+            grid-template-columns: 1fr;
+        }
+
+        @include respond(ipad) {
             min-height: 60vh;
             grid-template-columns: 1fr;
         }
@@ -68,6 +74,7 @@
         }
     }
     
+    // 2nd div
     .mid {
         height: 80vh;
         background: #fff;
@@ -115,20 +122,23 @@
             place-items: center;
 
             .card {
+                max-height: auto;
                 padding: 1rem;
                 display: grid;
                 grid-template-rows: repeat(3, 1fr);
                 border: none;
-                height: 80%;
+                min-height: 80%;
                 width: 80%;
                 border-radius: 2rem;
                 box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
                 @include respond(phone) {
                     height: 100%;
+                    margin-bottom: 2rem;
                 }
 
                 .container {
+                    max-height: auto;
                     display: grid;
                     grid-template-rows: 1fr 2fr;
 
@@ -142,7 +152,7 @@
                             font-family: Fredoka One;
 
                             @include respond(phone) {
-                                font-size: 2.5rem;
+                                font-size: 2rem;
                             }
                         }
 
@@ -167,6 +177,49 @@
                             font-size: 1.4rem;
                         }
                     }
+                }
+            }
+        }
+    }
+
+
+    // 3rd div
+    .bottom {
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .img {
+            display: grid;
+            place-items: center;
+
+            i {
+                color: #fff;
+                font-size: 15rem
+            }
+        }
+
+        .text {
+            display: grid;
+            place-items: center;
+
+            .item {
+                display: grid;
+                place-items: center;
+                width: 80%;
+                height: 40%;
+
+                h1 {
+                    color: #fff;
+                    font-family: Hind Siliguri;
+                    font-size: 3.5rem;
+                }
+
+                p {
+                    width: 80%;
+                    color: #fff;
+                    font-family: Hind Siliguri;
+                    font-size: 2rem;
                 }
             }
         }

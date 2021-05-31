@@ -4,13 +4,17 @@ const NavMobile = ({closeNav}) => {
     return (
         <div className='navMobile'>
             <div className='closeBtn' >
+                <Link to='/'><li><i id='logo' className="fas fa-chess-rook"></i></li></Link>
                 <p onClick={closeNav}>&times;</p>
             </div>
-            <ul>
-                <Link to='/Men'><li >Investing</li></Link>
-                <Link to='/Women'><li>Banking</li></Link>
-                <Link to='/About'><li >Education</li></Link>
-            </ul>
+
+            <div className='list'>
+                <ul>
+                    <Link to='/Invest'><li onClick={closeNav}>Investing</li></Link>
+                    <Link to='/Bank'><li onClick={closeNav}>Banking</li></Link>
+                    <Link to='/Education'><li onClick={closeNav}>Education</li></Link>
+                </ul>
+            </div>
         </div>
     )
 }

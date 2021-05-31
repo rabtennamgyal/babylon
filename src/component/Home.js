@@ -16,7 +16,7 @@ const Home = () => {
                     </div>
                     <div className='btn'>
                         <button>
-                            Join Now
+                            Sign Up
                         </button>
                     </div>
                 </div>
@@ -72,6 +72,25 @@ const Home = () => {
                                 and chosen by more than 8 Million people.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='bottom'>
+                <div className='img'>
+                    <i className="fas fa-chess-rook"></i>
+                </div>
+
+                <div className='text'>
+                    <div className='item'>
+                        <h1>
+                            Our security is as strong as a Fort.
+                        </h1>
+                        <p>
+                            We use Bank-level security, 256-bit
+                            encryption, and allow two-factor authentication
+                            for added security.
+                        </p>
                     </div>
                 </div>
             </div>
