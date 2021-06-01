@@ -1,0 +1,137 @@
+.footer {
+    background: $primary-color;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+
+    @include respond(phone) {
+        height: 50vh;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        i {
+            cursor: pointer;
+            font-size: 4.5rem;
+            color: #fff;
+
+            @include respond(phone) {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .main {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);
+
+        .contact {
+            h1 {
+                color: #fff;
+                font-family: Hind Siliguri;
+                font-size: 3rem;
+
+                @include respond(phone) {
+                    font-size: 1.3rem;
+                }
+            }
+
+            button {
+                cursor: pointer;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                height: 4rem;
+                width: 20rem;
+                font-size: 2rem;
+                font-family: Fredoka One;
+
+                @include respond(phone) {
+                    font-size: 1rem;
+                    width: 10rem;
+                    height: 3rem;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.7s;
+                }
+            }
+        }
+
+        .products {
+            h1 {
+                color: #fff;
+                font-family: Hind Siliguri;
+                font-size: 3rem;
+
+                @include respond(phone) {
+                    font-size: 2rem;
+                }
+            }
+
+            li {
+                cursor: pointer;
+                list-style: none;
+                color: #fff;
+                font-family: Hind Siliguri;
+                font-size: 2rem;
+
+                @include respond(phone) {
+                    font-size: 1rem;
+                }
+
+                &:hover {
+                    color: #ffffffbb;
+                }
+            }
+        }
+
+        .who {
+            h1 {
+                color: #fff;
+                font-family: Hind Siliguri;
+                font-size: 3rem;
+
+                @include respond(phone) {
+                    font-size: 2rem;
+                }
+            }
+
+            li {
+                cursor: pointer;
+                list-style: none;
+                color: #fff;
+                font-family: Hind Siliguri;
+                font-size: 2rem;
+
+                @include respond(phone) {
+                    font-size: 1rem;
+                }
+
+                &:hover {
+                    color: #ffffffbb;
+                }
+            }
+        }
+    }
+
+    .end {
+        display: grid;
+        place-items: center;
+
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+            font-family: Hind Siliguri;
+
+            @include respond(phone) {
+                font-size: 2rem;
+            }
+        }
+    }
+}
