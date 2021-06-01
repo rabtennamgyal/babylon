@@ -1,3 +1,8 @@
+// @import warren from '../Asset/buffet.jpg_background=000000&cropX1=748&cropX2=3075&cropY1=1753&cropY2=4082';
+// @import jack from '../Asset/bogle.jpg';
+// @import charlie from '../Asset/munger.jpeg';
+
+
 .home {
     min-height: 85vh;
     max-height: auto;
@@ -254,18 +259,17 @@
     .slider {
         position: relative;
         height: 100vh;
-        background: #fff;
+        background: #fff;//$primary-color;
         display: grid;
         place-items: center;
         grid-template-columns: 1fr;
-        padding: 2rem 0;
 
         .left {
             cursor: pointer;
             justify-self: left;
             color: #fff;
             position: absolute;
-            font-size: 3rem;
+            font-size: 2rem;
             border-radius: 50px;
             background: #000000;
             padding: 1rem;
@@ -277,7 +281,7 @@
             justify-self: right;
             color: #fff;
             position: absolute;
-            font-size: 3rem;
+            font-size: 2rem;
             border-radius: 50px;
             background: #000000;
             padding: 1rem;
@@ -287,31 +291,20 @@
         .slides {
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             border-radius: 20px;
-            height: 100%;
-            width: 70%;
+            height: 60%;
+            width: 50%;
             margin: auto;
-            display: flex;
             overflow: hidden;
+            }
 
-            .box {
-                border: none;
-                width: 100%;
+            .img {
+                display: flex;
                 
-                .img {
-                    width: 90rem;
-                    height: 90%;
-                }
-
-                p {
-                    display: grid;
-                    place-items: center;
-                    font-size: 1.9rem;
-                    font-family: Hind Siliguri;
-                    color: $primary-font;
+                img {
+                    width: 100%;
                 }
             }
         }
-    }
 
     // 5th div
     .footer {

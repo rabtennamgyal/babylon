@@ -1,14 +1,20 @@
-import warren from '../Asset/buffet.jpg_background=000000&cropX1=748&cropX2=3075&cropY1=1753&cropY2=4082';
-import jack from '../Asset/bogle.jpg';
-import charlie from '../Asset/munger.jpeg';
-
+import { useEffect, useState } from 'react'
+import data from '../Asset/data/imgData'
 
 const Home = () => {
+    const datas = Array.from(data)
 
+    const next = () => {
+        datas.push(datas.shift())
+        console.log(datas)
+    }
+
+    const prev = () => {
+        console.log(datas)
+    }
 
     return (
         <div className='home'>
-            
             <div className='top'>
                 <div className='one'>
                     <div className='title'>
@@ -103,40 +109,19 @@ const Home = () => {
 
             <div className='slider'>
                     <div className='left'>
-                        <p>&larr;</p>
+                        <p onClick={prev}>&larr;</p>
                     </div>
 
                 <div className='slides'>
-                        <div className='box one'>
-                            <img class='img' src={warren} />
-                            <p>
-                                "I use Babylon everyday, the reason I'm the 
-                                great Investor I am today is because of Babylon.
-                                I Love Babylon."
-                            </p>
-                        </div>
-        
-                        <div className='box two'>
-                            <img class='img' src={jack} />
-                            <p>
-                                "If I have to choose between an Index Fund and Babylon,
-                                I'll choose Babylon. It is miles better than any Index 
-                                Fund, go Babylon."
-                            </p>
-                        </div>
-        
-                        <div className='box three'>
-                            <img class='img' src={charlie} />
-                            <p>
-                                "I once told Warren to check out this new site called
-                                Babylon. And he did, look where he is now, all thanks to
-                                Babylon."
-                            </p>
-                        </div>
+                    <div className='img'>
+                        {data.map((el) => {
+                            return (<img src={el.img} />)
+                        })}
+                    </div>
                 </div>
 
                     <div className='right'>
-                        <p>&rarr;</p>
+                        <p onClick={next}>&rarr;</p>
                     </div>
             </div>
 
