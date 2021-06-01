@@ -2,15 +2,15 @@ import { useEffect, useState } from 'react'
 import data from '../Asset/data/imgData'
 
 const Home = () => {
-    const datas = Array.from(data)
+    const [current, setCurrent] = useState(0)
+    const length = data.length
 
     const next = () => {
-        datas.push(datas.shift())
-        console.log(datas)
+        setCurrent(current === length - 1 ? 0 : current + 1)
     }
 
     const prev = () => {
-        console.log(datas)
+        setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
     return (
@@ -108,19 +108,22 @@ const Home = () => {
             </div>
 
             <div className='slider'>
-                    <div className='left'>
+                    <div onClick={prev} className='left'>
                         <p onClick={prev}>&larr;</p>
                     </div>
 
                 <div className='slides'>
-                    <div className='img'>
-                        {data.map((el) => {
-                            return (<img src={el.img} />)
-                        })}
-                    </div>
+                    {data.map((el, i) => {
+                        return (
+                            <div className={i === current ? 'active' : 'slide'} key={i}>
+                                {i === current && (<img src={el.img} />)}
+                                {i === current && (<p id='text'>{el.text}</p>)}
+                            </div>
+                        )
+                    })}
                 </div>
 
-                    <div className='right'>
+                    <div onClick={next} className='right'>
                         <p onClick={next}>&rarr;</p>
                     </div>
             </div>
