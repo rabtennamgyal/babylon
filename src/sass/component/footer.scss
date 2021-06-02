@@ -5,7 +5,7 @@
     grid-template-rows: 1fr 2fr 1fr;
 
     @include respond(phone) {
-        height: 50vh;
+        height: 40vh;
     }
 
     .social {
@@ -25,6 +25,7 @@
     }
 
     .main {
+        padding: 0 1rem;
         display: grid;
         place-items: center;
         grid-template-columns: repeat(3, 1fr);
@@ -41,6 +42,7 @@
             }
 
             button {
+                margin-top: 1rem;
                 cursor: pointer;
                 border: none;
                 outline: none;

@@ -123,6 +123,7 @@
         display: none;
 
         @include respond(phone) {
+            cursor: pointer;
             display: inline;
             font-size: 3rem;
             align-self: center;
