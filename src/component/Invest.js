@@ -37,7 +37,9 @@ const Invest = () => {
             </div>
 
             <div className='two'>
-
+                <h1>
+                    What features do you get with Babylon ?
+                </h1>
             </div>
         </div>
     )

@@ -78,6 +78,7 @@
         }
 
         .two {
+
             @include respond(phone) {
                 display: none;
             }

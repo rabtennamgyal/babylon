@@ -11,6 +11,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+        }
+
         .divOne {
             display: grid;
             place-items: center;
@@ -19,16 +23,28 @@
                 width: 90%;
                 height: 80%;
 
+                @include respond(phone) {
+                    display: grid;
+                }
+
                 h1 {
                     font-family: Hind Siliguri;
                     font-size: 4.5rem;
                     color: #fff;
+
+                    @include respond(phone) {
+                        font-size: 3rem;
+                    }
                 }
     
                 h2 {
                     font-family: Hind Siliguri;
                     font-size: 3rem;
                     color: #fff;
+
+                    @include respond(phone) {
+                        font-size: 2rem;
+                    }
                 }
 
                 ul {
@@ -64,6 +80,12 @@
                     font-size: 2rem;
                     font-family: Fredoka One;
 
+                    @include respond(phone) {
+                        justify-self: center;
+                        height: 4rem;
+                        width: 16rem;
+                    }
+
                     &:hover {
                         transform: scale(1.1);
                         transition: 0.7s;
@@ -78,7 +100,27 @@
 
             .phone-img {
                 height: 50rem;
+
+                
+                @include respond(phone) {
+                    height: 20rem;
+                }
             }
+        }
+    }
+
+    .two {
+        padding: 0.5rem;
+        background-color: #fff;
+        min-height: 100vh;
+        max-height: auto;
+
+        h1 {
+            display: grid;
+            place-items: center;
+            color: $primary-font;
+            font-family: Hind Siliguri;
+            font-size: 4rem;
         }
     }
 }
