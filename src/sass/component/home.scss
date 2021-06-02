@@ -68,6 +68,11 @@
                     background: #fff;
                     color: $primary-font;
                     font-size: 1.7rem;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.7s;
+                    }
                 }
             }
         }
@@ -286,7 +291,7 @@
                 margin: 0 1rem;
     
                 @include respond(phone) {
-                    font-size: 1rem;
+                    font-size: .7rem;
                     margin: 0;
                 }
             }
@@ -301,7 +306,7 @@
                 margin: 0 1rem;
     
                 @include respond(phone) {
-                    font-size: 1rem;
+                    font-size: .7rem;
                     margin: 0;
                 }
             }
@@ -315,7 +320,7 @@
                 display: flex;
     
                 @include respond(phone) {
-                    width: 25rem;
+                    width: 32rem;
                     height: 90%;
                 }
     
