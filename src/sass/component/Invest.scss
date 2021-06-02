@@ -58,6 +58,10 @@
                             font-size: 2rem;
                             color: #fff;
                             margin-right: 1rem;
+
+                            @include respond(tab-port) {
+                                margin-top: 0;
+                            }
                         }
 
                         li {
@@ -66,6 +70,10 @@
                             list-style: none;
                             font-size: 2rem;
                             font-family: Hind Siliguri;
+
+                            @include respond(tab-port) {
+                                margin-top: 0;
+                            }
                         }
                     }
                 }
@@ -95,15 +103,15 @@
         }
 
         .divTwo {
+            margin-top: 5rem;
             display: grid;
             place-items: center;
 
             .phone-img {
                 height: 50rem;
-
                 
                 @include respond(phone) {
-                    height: 20rem;
+                    height: 35rem;
                 }
             }
         }
