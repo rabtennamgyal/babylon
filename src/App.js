@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from './component/Navbar'
 import NavMobile from './component/NavMobile'
 import Home from './component/Home'
+import Invest from './component/Invest'
 import Footer from './component/Footer'
 import { useState } from "react";
 
@@ -31,6 +32,9 @@ function App() {
         {nav && <NavMobile closeNav={closeNav} />}
         <Switch>
           <Home exact path='/' />
+        </Switch>
+        <Switch>
+          <Invest exact path='/Invest' />
         </Switch>
         <Footer />
       </div>

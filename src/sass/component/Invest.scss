@@ -1,0 +1,82 @@
+.invest {
+    min-height: 100vh;
+    max-height: auto;
+    background-color: $primary-color;
+
+    .one {
+        min-height: 100vh;
+        max-height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .divOne {
+            display: grid;
+            place-items: center;
+
+            .intro {
+                width: 90%;
+                height: 80%;
+
+                h1 {
+                    font-family: Hind Siliguri;
+                    font-size: 4.5rem;
+                    color: #fff;
+                }
+    
+                h2 {
+                    font-family: Hind Siliguri;
+                    font-size: 3rem;
+                    color: #fff;
+                }
+
+                ul {
+                    margin-top: 1rem;
+                
+                    .list {
+                        display: flex;
+
+                        i {
+                            margin-top: 1rem;
+                            font-size: 2rem;
+                            color: #fff;
+                            margin-right: 1rem;
+                        }
+
+                        li {
+                            margin-top: 1rem;
+                            color: #fff;
+                            list-style: none;
+                            font-size: 2rem;
+                            font-family: Hind Siliguri;
+                        }
+                    }
+                }
+
+                button {
+                    margin-top: 1rem;
+                    cursor: pointer;
+                    height: 5rem;
+                    width: 20rem;
+                    border: none;
+                    border-radius: 50px;
+                    font-size: 2rem;
+                    font-family: Fredoka One;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.7s;
+                    }
+                }
+            }
+        }
+
+        .divTwo {
+            display: grid;
+            place-items: center;
+
+            .phone-img {
+                height: 50rem;
+            }
+        }
+    }
+}
