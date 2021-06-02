@@ -108,24 +108,39 @@ const Home = () => {
             </div>
 
             <div className='slider'>
+                <div className='one'>
                     <div onClick={prev} className='left'>
                         <p onClick={prev}>&larr;</p>
                     </div>
-
-                <div className='slides'>
-                    {data.map((el, i) => {
-                        return (
-                            <div className={i === current ? 'active' : 'slide'} key={i}>
-                                {i === current && (<img src={el.img} />)}
-                                {i === current && (<p id='text'>{el.text}</p>)}
-                            </div>
-                        )
-                    })}
-                </div>
-
+    
+                    <div className='slides'>
+                        {data.map((el, i) => {
+                            return (
+                                <div id='el' className={i === current ? 'active' : 'slide'} key={i}>
+                                    {i === current && (<img src={el.img} />)}
+                                    {i === current && (<p id='text'>{el.text}</p>)}
+                                </div>
+                            )
+                        })}
+                    </div>
+    
                     <div onClick={next} className='right'>
                         <p onClick={next}>&rarr;</p>
                     </div>
+                </div>
+
+                <div className='two'>
+                    <div>
+                        <h1>
+                            Grow your Knowledge
+                        </h1>
+                        <p>
+                            Original money tips and tricks developed
+                            for you by Babylon and CNBC. The more you 
+                            know, the more you grow.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     )

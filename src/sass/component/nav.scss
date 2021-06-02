@@ -38,6 +38,11 @@
                     font-size: 2rem;
                     font-family: Fredoka One;
 
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.7s;
+                    }
+
                     @include respond(phone) {
                         display: none;
                     }
@@ -86,6 +91,11 @@
                     height: 3rem;
                     width: 10rem;
                     background: inherit;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.7s;
+                    }
                 }
 
                 #signup {
@@ -95,6 +105,11 @@
                     border-radius: 50px;
                     font-size: 1.5rem;
                     color: #fff;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.7s;
+                    }
 
                     @include respond(mid) {
                         width: 10rem;

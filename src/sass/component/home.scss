@@ -257,96 +257,111 @@
 
     // 4th Div
     .slider {
-        position: relative;
-        height: 100vh;
+        height: 90vh;
         background: #fcfcfc;
         display: grid;
-        place-items: center;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
 
-        @include respond(phone) {
-            height: 60vh;
-        }
-
-        @include respond(tab-port) {
-            height: 60vh;
-        }
-
-        .left {
-            cursor: pointer;
-            justify-self: left;
-            color: #fff;
-            position: absolute;
-            font-size: 2rem;
-            border-radius: 50px;
-            background: #b9b9b9;
-            padding: 1rem;
-            margin: 0 1rem;
-
-            @include respond(phone) {
-                align-self: flex-end;
-                font-size: 1rem;
-                margin-bottom: 1rem;
-            }
-        }
-
-        .right {
-            cursor: pointer;
-            justify-self: right;
-            color: #fff;
-            position: absolute;
-            font-size: 2rem;
-            border-radius: 50px;
-            background: #b9b9b9;
-            padding: 1rem;
-            margin: 0 1rem;
-
-            @include respond(phone) {
-                font-size: 1rem;
-                align-self: flex-end;
-                margin-bottom: 1rem;
-            }
-        }
-
-        .slides {
-            background: #fff;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            border-radius: 20px;
-            height: 80%;
-            width: 50%;
-            margin: auto;
-            overflow: hidden;
-
-            @include respond(phone) {
-                width: 95%;
-                height: 70%;
-            }
-
-            @include respond(tab-port) {
-                height: 70%;
-            }
-        }
-
-            div {
-
-                img {
-                    width: 100%;
+        .one {
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr 3fr 1fr;
+            
+            .left {
+                cursor: pointer;
+                color: #fff;
+                font-size: 2rem;
+                border-radius: 50px;
+                background: #b9b9b9;
+                padding: 1rem;
+                margin: 0 1rem;
+    
+                @include respond(phone) {
+                    align-self: flex-end;
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
                 }
+            }
+    
+            .right {
+                cursor: pointer;
+                color: #fff;
+                font-size: 2rem;
+                border-radius: 50px;
+                background: #b9b9b9;
+                padding: 1rem;
+                margin: 0 1rem;
+    
+                @include respond(phone) {
+                    font-size: 1rem;
+                    align-self: flex-end;
+                    margin-bottom: 1rem;
+                }
+            }
+    
+            .slides {
+                height: 70%;
+                width: 50rem;
+                background: #fff;
+                margin: auto;
+                overflow: hidden;
+                display: flex;
+    
+                @include respond(phone) {
+                    width: 95%;
+                    height: 70%;
+                }
+    
+                @include respond(tab-port) {
+                    height: 70%;
+                }
+            }
+    
+                #el {
+                    height: 100%;
+                    display: grid;
+                    grid-template-rows: 3fr 1fr;
 
-                #text {
-                    padding: 0 .2rem;
-                    color: $primary-font;
-                    font-size: 2rem;
-                    font-family: Hind Siliguri;
-
-                    @include respond(phone) {
-                        font-size: 1rem;
+                    img {
+                        height: 100%;
+                        width: 100%;
                     }
-
-                    @include respond(tab-port) {
-                        font-size: 1rem;
+    
+                    #text {
+                        margin-top: 0.5rem;
+                        color: $primary-font;
+                        font-size: 1.7rem;
+                        font-family: Hind Siliguri;
+    
+                        @include respond(phone) {
+                            font-size: 1rem;
+                        }
+    
+                        @include respond(tab-port) {
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
         }
-}
+
+        .two {
+            display: grid;
+            place-items: center;
+
+            h1 {
+                text-align: center;
+                color: $primary-font;
+                font-family: Hind Siliguri;
+                font-size: 4rem;
+            }
+
+            p {
+                text-align: center;
+                color: $primary-font;
+                font-family: Hind Siliguri;
+                font-size: 2rem;
+                padding: 0 .5rem;
+            }
+        }
+    }
