@@ -40,6 +40,9 @@ const Invest = () => {
                 <h1>
                     What features do you get with Babylon ?
                 </h1>
+                <div className='features'>
+                    
+                </div>
             </div>
         </div>
     )

@@ -49,6 +49,7 @@
                 width: 20rem;
                 font-size: 2rem;
                 font-family: Fredoka One;
+                background-color: #fff;
 
                 @include respond(phone) {
                     font-size: 1rem;
