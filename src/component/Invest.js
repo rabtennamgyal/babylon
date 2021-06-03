@@ -121,125 +121,124 @@ const Invest = () => {
                     What you get with Babylon ?
                 </h1>
                 <div className='features'>
-                    { /* Container Number One */}
-                    <div className='box education'>
-                        <div className='item'>
-                            <i class="fas fa-book-open"></i>
-                            <h2>
-                                Education & Information
-                            </h2>
-                        </div>
-                        <div className='arrow'>
-                            {right && <i onClick={showText} class="fas fa-arrow-right"></i>}
-                            {down && <i onClick={showText} class="fas fa-arrow-down"></i>}
-                        </div>
-                        <div className='text' id='tOne'>
-                            <div className='text-box'>
-                                <p>
-                                    Knowledge is Power. And we want to help you
-                                    keep growing your financial literacy, all in 
-                                    one App. We also provide personalized financial 
-                                    news, so you can keep up with the latest in the 
-                                    Business world.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    { /* Container Number Two */}
-                    <div className='box round-up'>
-                        <div className='item'>
-                            <i class="fas fa-coins"></i>
-                            <h2>
-                                Round-up spare change
-                            </h2>
-                        </div>
-                        <div className='arrow'>
-                            {right1 && <i onClick={showText1} class="fas fa-arrow-right"></i>}
-                            {down1 && <i onClick={showText1} class="fas fa-arrow-down"></i>}
-                        </div>
-                        <div className='text' id='tTwo'>
-                            <div className='text-box'>
-                                <p>
-                                    Automatically invest your spare change from everyday
-                                    purchases like gas and groceries, while you go about
-                                    your day. We invest it in stocks you have chosen, and 
-                                    if you haven't; then we invest it in the S&P 500.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                     { /* Container Number Three */}
-                    <div className='box round-up'>
-                        <div className='item'>
-                            <i class="fas fa-chart-pie"></i>
-                            <h2>
-                                Diversified portfolios by AI
-                            </h2>
-                        </div>
-                        <div className='arrow'>
-                            {right2 && <i onClick={showText2} class="fas fa-arrow-right"></i>}
-                            {down2 && <i onClick={showText2} class="fas fa-arrow-down"></i>}
-                        </div>
-                        <div className='text' id='tThree'>
-                            <div className='text-box'>
-                                <p>
-                                    For as little as $1, invest in a well diversified portfolios
-                                    built by our AI. The stocks are picked by our AI and the 
-                                    goal is to built a portfolios that generates income for 
-                                    the owner. Stocks targeted by our AI are mostly well-positioned
-                                    blue chip companies with strong dividends and good balance sheet.
-                                </p>
+                        <div className='box round-up'>
+                            <div className='item'>
+                                <i class="fas fa-chart-pie"></i>
+                                <h2>
+                                    Diversified portfolios by AI
+                                </h2>
+                            </div>
+                            <div className='arrow'>
+                                {right2 && <i onClick={showText2} class="fas fa-arrow-right"></i>}
+                                {down2 && <i onClick={showText2} class="fas fa-arrow-down"></i>}
+                            </div>
+                            <div className='text' id='tThree'>
+                                <div className='text-box'>
+                                    <p>
+                                        For as little as $1, invest in a well diversified portfolios
+                                        built by our AI. The stocks are picked by our AI and the 
+                                        goal is to built a portfolios that generates income for 
+                                        the owner. Stocks targeted by our AI are mostly well-positioned
+                                        blue chip companies with strong dividends and good balance sheet.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    { /* Container Number Four */}
-                    <div className='box round-up'>
-                        <div className='item'>
-                            <i class="fas fa-recycle"></i>
-                            <h2>
-                                Recurring Investments
-                            </h2>
-                        </div>
-                        <div className='arrow'>
-                            {right3 && <i onClick={showText3} class="fas fa-arrow-right"></i>}
-                            {down3 && <i onClick={showText3} class="fas fa-arrow-down"></i>}
-                        </div>
-                        <div className='text' id='tFour'>
-                            <div className='text-box'>
-                                <p>
-                                    Set an easy, automatic recurring investment starting at just
-                                    $5 a day, so tap into the power of dollar cost averaging. 
-                                    If researching and looking into stock one by one isn't your
-                                    thing than just let our AI handle it.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                     {/* Container Number Five*/}
-                    <div className='box round-up'>
-                        <div className='item'>
-                            <i class="far fa-credit-card"></i>
-                            <h2>
-                                Earn Cash back & Rewards
-                            </h2>
-                        </div>
-                        <div className='arrow'>
-                            {right4 && <i onClick={showText4} class="fas fa-arrow-right"></i>}
-                            {down4 && <i onClick={showText4} class="fas fa-arrow-down"></i>}
-                        </div>
-                        <div className='text' id='tFive'>
-                            <div className='text-box'>
-                                <p>
-                                    Use our credit card with no hidden fees, no minimum balance 
-                                    and no annual fees. Earn 20% cash back every month and 
-                                    build up points to earn free purchases at our selected 
-                                    stores.
-                                </p>
+                        <div className='box round-up'>
+                            <div className='item'>
+                                <i class="far fa-credit-card"></i>
+                                <h2>
+                                    Earn Cash back & Rewards
+                                </h2>
+                            </div>
+                            <div className='arrow'>
+                                {right4 && <i onClick={showText4} class="fas fa-arrow-right"></i>}
+                                {down4 && <i onClick={showText4} class="fas fa-arrow-down"></i>}
+                            </div>
+                            <div className='text' id='tFive'>
+                                <div className='text-box'>
+                                    <p>
+                                        Use our credit card with no hidden fees, no minimum balance 
+                                        and no annual fees. Earn 20% cash back every month and 
+                                        build up points to earn free purchases at our selected 
+                                        stores.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-
+                    { /* Container Number One */}
+                        <div className='box education'>
+                            <div className='item'>
+                                <i class="fas fa-book-open"></i>
+                                <h2>
+                                    Education & Information
+                                </h2>
+                            </div>
+                            <div className='arrow'>
+                                {right && <i onClick={showText} class="fas fa-arrow-right"></i>}
+                                {down && <i onClick={showText} class="fas fa-arrow-down"></i>}
+                            </div>
+                            <div className='text' id='tOne'>
+                                <div className='text-box'>
+                                    <p>
+                                        Knowledge is Power. And we want to help you
+                                        keep growing your financial literacy, all in 
+                                        one App. We also provide personalized financial 
+                                        news, so you can keep up with the latest in the 
+                                        Business world.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    { /* Container Number Two */}
+                        <div className='box round-up'>
+                            <div className='item'>
+                                <i class="fas fa-coins"></i>
+                                <h2>
+                                    Round-up spare change
+                                </h2>
+                            </div>
+                            <div className='arrow'>
+                                {right1 && <i onClick={showText1} class="fas fa-arrow-right"></i>}
+                                {down1 && <i onClick={showText1} class="fas fa-arrow-down"></i>}
+                            </div>
+                            <div className='text' id='tTwo'>
+                                <div className='text-box'>
+                                    <p>
+                                        Automatically invest your spare change from everyday
+                                        purchases like gas and groceries, while you go about
+                                        your day. We invest it in stocks you have chosen, and 
+                                        if you haven't; then we invest it in the S&P 500.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    { /* Container Number Four */}
+                        <div className='box round-up'>
+                            <div className='item'>
+                                <i class="fas fa-recycle"></i>
+                                <h2>
+                                    Recurring Investments
+                                </h2>
+                            </div>
+                            <div className='arrow'>
+                                {right3 && <i onClick={showText3} class="fas fa-arrow-right"></i>}
+                                {down3 && <i onClick={showText3} class="fas fa-arrow-down"></i>}
+                            </div>
+                            <div className='text' id='tFour'>
+                                <div className='text-box'>
+                                    <p>
+                                        Set an easy, automatic recurring investment starting at just
+                                        $5 a day, so tap into the power of dollar cost averaging. 
+                                        If researching and looking into stock one by one isn't your
+                                        thing than just let our AI handle it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Container ends here */}
                 </div>
             </div>
         </div>
