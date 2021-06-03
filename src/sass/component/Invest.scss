@@ -132,13 +132,20 @@
             color: $primary-font;
             font-family: Hind Siliguri;
             font-size: 4rem;
+
+            @include respond(phone) {
+                font-size: 2.5rem;
+            }
         }
 
+
         .features {
-            height: 70%;
+            min-height: 70%;
+            max-height: auto;
 
             .box {
-                height: 10rem;
+                min-height: 10rem;
+                max-height: auto;
                 cursor: pointer;
                 display: grid;
                 grid-template-columns: 2fr 1fr;
@@ -158,12 +165,22 @@
                         font-size: 3rem;
                         color: $primary-font;
                         margin: 0 1rem;
+
+                        @include respond(phone) {
+                            font-size: 2rem;
+                            margin: 0 2rem;
+                        }
                     }
     
                     h2 {
                         font-family: Hind Siliguri;
                         font-size: 3rem;
                         color: $primary-font;
+
+                        @include respond(phone) {
+                            font-size: 2rem;
+                            margin: 0 1rem;
+                        }
                     }
                 }
 
@@ -177,6 +194,35 @@
                         cursor: pointer;
                         font-size: 3rem;
                         color: $primary-font;
+
+                        @include respond(phone) {
+                            font-size: 2rem;
+                        }
+
+                        &:hover {
+                            color: $primary-color;
+                            transform: scale(1.1);
+                            transition: 0.7s;
+                        }
+                    }
+                }
+
+                .text {
+                    margin: 1rem 0;
+                    display: none;
+                    justify-content: flex-end;
+                    flex-direction: row;
+                    width: 100%;
+
+                    .text-box {
+                        width: 65%;
+
+                        p {
+                            color: $primary-font;
+                            font-family: Hind Siliguri;
+                            font-size: 1.7rem;
+                            line-height: 3rem;
+                        }
                     }
                 }
             }
