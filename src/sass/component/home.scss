@@ -1,7 +1,3 @@
-// @import warren from '../Asset/buffet.jpg_background=000000&cropX1=748&cropX2=3075&cropY1=1753&cropY2=4082';
-// @import jack from '../Asset/bogle.jpg';
-// @import charlie from '../Asset/munger.jpeg';
-
 
 .home {
     min-height: 85vh;
@@ -47,10 +43,6 @@
                     padding: .5rem 3rem;
                     font-size: 2rem;
                     color: #fff;
-
-                    @include respond(phone) {
-                        font-size: 2rem;
-                    }
                 }
             }
 

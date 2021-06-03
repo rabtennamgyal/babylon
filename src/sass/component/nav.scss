@@ -1,5 +1,6 @@
 .navbar {
-    height: 15vh;
+    min-height: 15vh;
+    max-height: auto;
     background: #fff;
     display: grid;
     grid-template-columns: 2fr 1fr;

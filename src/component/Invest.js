@@ -41,7 +41,28 @@ const Invest = () => {
                     What features do you get with Babylon ?
                 </h1>
                 <div className='features'>
-                    
+                    <div className='box education'>
+                        <div className='item'>
+                            <i class="fas fa-book-open"></i>
+                            <h2>
+                                Education & Information
+                            </h2>
+                        </div>
+                        <div className='arrow'>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div className='box round-up'>
+                        <div className='item'>
+                            <i class="fas fa-coins"></i>
+                            <h2>
+                                Round-up spare change
+                            </h2>
+                        </div>
+                        <div className='arrow'>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
