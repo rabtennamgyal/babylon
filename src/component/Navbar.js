@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 
-const Navbar = ({openNav}) => {
+const Navbar = ({openNav, openModal}) => {
     return (
         <nav className='navbar'>
             <div className='one'>
@@ -23,7 +23,7 @@ const Navbar = ({openNav}) => {
                     </Link>
 
                     <Link to='/SignUp'>
-                        <button id='signup'>
+                        <button onClick={openModal} id='signup'>
                             Sign Up
                         </button>
                     </Link>

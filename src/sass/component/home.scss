@@ -12,13 +12,12 @@
         grid-template-columns: repeat(2, 1fr);
 
         @include respond(phone) {
-            min-height: 60vh;
+            min-height: 70vh;
             grid-template-columns: 1fr;
         }
 
-        @include respond(ipad) {
-            min-height: 60vh;
-            grid-template-columns: 1fr;
+        @include respond(tab-port) {
+            min-height: 80vh;
         }
 
         .one {
@@ -70,6 +69,9 @@
         }
 
         .two {
+            img {
+                height: 50rem;
+            }
 
             @include respond(phone) {
                 display: none;

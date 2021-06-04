@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import data from '../Asset/data/imgData'
+import img from '../Asset/123.png'
 
-const Home = () => {
+const Home = ({openModal}) => {
     const [current, setCurrent] = useState(0)
     const length = data.length
 
@@ -27,14 +28,14 @@ const Home = () => {
                         </h3>
                     </div>
                     <div className='btn'>
-                        <button>
+                        <button onClick={openModal}>
                             Sign Up
                         </button>
                     </div>
                 </div>
                 
                 <div className='two'>
-
+                    <img src={img} />
                 </div>
             </div>
 

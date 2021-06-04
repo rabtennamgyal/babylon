@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from './component/Navbar'
 import NavMobile from './component/NavMobile'
 import Home from './component/Home'
+import Modal from './component/Modal'
 import Invest from './component/Invest'
 import Footer from './component/Footer'
 import { useState } from "react";
@@ -25,16 +26,25 @@ function App() {
     }
   }
 
+  const [modal, setModal] = useState(false)
+
+  const openModal = () => {
+    setModal(true)
+  }
+
   return (
     <Router>
       <div className='app'>
-        <Navbar openNav={openNav} />
+        <Navbar openNav={openNav} openModal={openModal} />
         {nav && <NavMobile closeNav={closeNav} />}
         <Switch>
-          <Home exact path='/' />
+          <Modal exact path='/Modal'/>
         </Switch>
         <Switch>
-          <Invest exact path='/Invest' />
+          <Home exact path='/' openModal={openModal} />
+        </Switch>
+        <Switch>
+          <Invest exact path='/Invest' openModal={openModal} />
         </Switch>
         <Footer />
       </div>

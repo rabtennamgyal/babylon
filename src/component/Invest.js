@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import img from '../Asset/acct.png'
 
-const Invest = () => {
+const Invest = ({openModal}) => {
     const [right, SetRight] = useState(true)
     const [down, SetDown] = useState(false)
 
@@ -105,7 +105,7 @@ const Invest = () => {
                                 <i class="fas fa-check"></i><li>See your Performance</li>
                             </div>
                         </ul>
-                        <button>
+                        <button onClick={openModal}>
                             Get Started
                         </button>
                     </div>
