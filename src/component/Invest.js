@@ -105,7 +105,7 @@ const Invest = ({openModal}) => {
                                 <i class="fas fa-check"></i><li>See your Performance</li>
                             </div>
                         </ul>
-                        <button onClick={openModal}>
+                        <button>
                             Get Started
                         </button>
                     </div>

@@ -28,7 +28,7 @@ const Home = ({openModal}) => {
                         </h3>
                     </div>
                     <div className='btn'>
-                        <button onClick={openModal}>
+                        <button>
                             Sign Up
                         </button>
                     </div>

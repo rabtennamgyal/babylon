@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from './component/Navbar'
 import NavMobile from './component/NavMobile'
 import Home from './component/Home'
-import Modal from './component/Modal'
 import Invest from './component/Invest'
+import Bank from './component/Bank'
 import Footer from './component/Footer'
 import { useState } from "react";
 
@@ -26,25 +26,20 @@ function App() {
     }
   }
 
-  const [modal, setModal] = useState(false)
-
-  const openModal = () => {
-    setModal(true)
-  }
 
   return (
     <Router>
       <div className='app'>
-        <Navbar openNav={openNav} openModal={openModal} />
+        <Navbar openNav={openNav} />
         {nav && <NavMobile closeNav={closeNav} />}
         <Switch>
-          <Modal exact path='/Modal'/>
+          <Home exact path='/'/>
         </Switch>
         <Switch>
-          <Home exact path='/' openModal={openModal} />
+          <Invest exact path='/Invest'/>
         </Switch>
         <Switch>
-          <Invest exact path='/Invest' openModal={openModal} />
+          <Bank exact path='/Bank'/>
         </Switch>
         <Footer />
       </div>
