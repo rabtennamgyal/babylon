@@ -98,9 +98,9 @@ const Bank = () => {
                         <div className='text'>
                             <div className='one'>
                                 <p>
-                                    You will get all the features included in 
+                                    You will get all the features in 
                                     the premium version, expect the MorningStar
-                                    Analysis. Free versions are Ad supported.
+                                    Analysis. Ad supported.
                                 </p>
                                 <button>
                                     Sign Up
