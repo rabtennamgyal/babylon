@@ -190,6 +190,7 @@
             }
 
             .box {
+                background: #747474;
                 justify-self: center;
                 border: none;
                 border-radius: 20px;
@@ -278,8 +279,8 @@
                         }
 
                         .content {
-                            width: auto;
                             display: none;
+                            width: auto;
                             flex-direction: column;
                             align-items: center;
 

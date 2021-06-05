@@ -1,6 +1,39 @@
+import {useState} from 'react'
 import img from '../Asset/card.png'
 
 const Bank = () => {
+    const [minus, setMinus] = useState(false)
+    const [add, setAdd] = useState(true)
+
+    const showText = () => {
+        const text = document.getElementById('content-one')
+        if (text.style.display === 'none') {
+            text.style.display = 'flex'
+            setMinus(true)
+            setAdd(false)
+        } else {
+            text.style.display = 'none'
+            setMinus(false)
+            setAdd(true)
+        }
+    }
+
+    const [minus2, setMinus2] = useState(false)
+    const [add2, setAdd2] = useState(true)
+
+    const showText2 = () => {
+        const text = document.getElementById('content-two')
+        if (text.style.display === 'none') {
+            text.style.display = 'flex'
+            setMinus2(true)
+            setAdd2(false)
+        } else {
+            text.style.display = 'none'
+            setMinus2(false)
+            setAdd2(true)
+        }
+    }
+
     return (
         <div className='bank'>
             <div className='top'>
@@ -111,9 +144,10 @@ const Bank = () => {
                                     <h1>
                                         What's included
                                     </h1>
-                                    <i class="fas fa-plus"></i>
+                                    {add && <i onClick={showText} class="fas fa-plus"></i>}
+                                    {minus && <i onClick={showText} class="fas fa-minus"></i>}
                                 </div>
-                                <div className='content'>
+                                <div id='content-one' className='content'>
                                     <div className='one'>
                                         <i class="fas fa-chart-line"></i>
                                         <h1>
@@ -165,7 +199,32 @@ const Bank = () => {
                                     <h1>
                                         What's included
                                     </h1>
-                                    <i class="fas fa-plus"></i>
+                                    {add2 && <i onClick={showText2} class="fas fa-plus"></i>}
+                                    {minus2 && <i onClick={showText2} class="fas fa-minus"></i>}
+                                </div>
+                                <div id='content-two' className='content'>
+                                    <div className='one'>
+                                        <i class="fas fa-chart-line"></i>
+                                        <h1>
+                                            Invest
+                                        </h1>
+                                    </div>
+                                    <div className='two'>
+                                        <ul>
+                                            <li>
+                                                Access to world class stock analysis from Morningstar
+                                            </li>
+                                            <li>
+                                                Access to all features
+                                            </li>
+                                            <li>
+                                                Earn 50% cash back
+                                            </li>
+                                            <li>
+                                                No Ads
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
