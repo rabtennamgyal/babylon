@@ -108,7 +108,7 @@ const Bank = () => {
                     </div>
                 </div>
             </div>
-            
+
             <div className='end'>
                 <div className='header'>
                     <h1>
@@ -189,7 +189,7 @@ const Bank = () => {
                                 <p>
                                     You will have access to great stock 
                                     analysis from the prestigious financial
-                                    firm MorningStar. Plus, no ads.
+                                    firm MorningStar. No Ads.
                                 </p>
                                 <button>
                                     Sign Up
