@@ -1,0 +1,78 @@
+.education-page {
+    min-height: 100vh;
+    max-height: auto;
+    background: linear-gradient(to right, #7f5fff, #a088ff);
+
+    .title {
+        height: 50vh;
+        display: grid;
+        place-items: center;
+
+        .text {
+            display: grid;
+            place-items: center;
+            height: 40%;
+            width: 60%;
+            
+            h1 {
+                font-size: 5.5rem;
+                font-family: Hind Siliguri;
+                color: #fff;
+            }
+
+            p {
+                font-size: 2rem;
+                font-family: Hind Siliguri;
+                color: #fff;
+            }
+        }
+    }
+
+    .content {
+        min-height: 60vh;
+        max-height: auto;
+        background: #fff;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .stock {
+            width: 50%;
+
+            h1 {
+                display: grid;
+                place-items: center;
+                font-size: 5rem;
+                font-family: Hind Siliguri;
+                color: $primary-font;
+            }
+
+            p {
+                padding: 1rem;
+                font-size: 1.8rem;
+                font-family: Hind Siliguri;
+                color: $primary-font;
+            }
+        }
+
+        .inflation {
+            width: 50%;
+
+            h1 {
+                display: grid;
+                place-items: center;
+                font-size: 5rem;
+                font-family: Hind Siliguri;
+                color: $primary-font;
+            }
+
+            p {
+                padding: 1rem;
+                font-size: 1.8rem;
+                font-family: Hind Siliguri;
+                color: $primary-font;
+            }
+        }
+    }
+}

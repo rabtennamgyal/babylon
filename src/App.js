@@ -4,6 +4,7 @@ import NavMobile from './component/NavMobile'
 import Home from './component/Home'
 import Invest from './component/Invest'
 import Bank from './component/Bank'
+import Education from './component/Education'
 import Footer from './component/Footer'
 import { useState } from "react";
 
@@ -40,6 +41,9 @@ function App() {
         </Switch>
         <Switch>
           <Bank exact path='/Bank'/>
+        </Switch>
+        <Switch>
+          <Education exact path='/Education'/>
         </Switch>
         <Footer />
       </div>
