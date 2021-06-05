@@ -232,7 +232,87 @@ const Bank = () => {
                 </div>
             </div>
             <div className='last'>
+                <div className='header'>
+                    <h1>
+                        See what others have to say
+                    </h1>
+                </div>
+                <div className='main'>
+                    <div className='content'>
+                        <div className='box'>
+                            <p>
+                                "Investing is now made for everyone."
+                            </p>
+                            <h1>
+                                Forbes
+                            </h1>
+                        </div>
 
+                        <div className='box'>
+                            <p>
+                                "App of the year 2021."
+                            </p>
+                            <h1>
+                                Apple
+                            </h1>
+                        </div>
+
+                        <div className='box'>
+                            <p>
+                                "The hard part is putting money aside 
+                                but Babylon does it for you."
+                            </p>
+                            <h1>
+                                CNN Money
+                            </h1>
+                        </div>
+
+                        <div className='box'>
+                            <p>
+                                "Investing to the most effective way
+                                to build wealth and you don't need a 
+                                lot of money thanks to Babylon."
+                            </p>
+                            <h1>
+                                CNBC
+                            </h1>
+                        </div>
+
+                        <div className='box'>
+                            <p>
+                                "You think Investing is only for 
+                                the rick folks, that you need a lot 
+                                of money ... not anymore thanks to
+                                Babylon."
+                            </p>
+                            <h1>
+                                Good Morning America
+                            </h1>
+                        </div>
+
+                        
+                        <div className='box'>
+                            <p>
+                                "Babylon is my favorite money app, 
+                                it make investment easy and fun."
+                            </p>
+                            <h1>
+                                Business Insider
+                            </h1>
+                        </div>
+
+                        
+                        <div className='box'>
+                            <p>
+                                "Thanks to Babylon, you can now 
+                                invest your money without any hassle."
+                            </p>
+                            <h1>
+                                Yahoo Finance
+                            </h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
