@@ -108,6 +108,7 @@ const Bank = () => {
                     </div>
                 </div>
             </div>
+            
             <div className='end'>
                 <div className='header'>
                     <h1>
