@@ -191,8 +191,9 @@
 
             .box {
                 justify-self: center;
-                border: solid #fff;
+                border: none;
                 border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;;
                 margin: 0 1rem;
                 width: 70%;
                 display: grid;
@@ -233,6 +234,7 @@
                         }
     
                         button {
+                            margin-top: 1rem;
                             cursor: pointer;
                             height: 4rem;
                             width: 60%;
@@ -271,6 +273,41 @@
                                 margin-top: 1rem;
                                 color: #fff;
                                 font-size: 2rem;
+                            }
+                        }
+
+                        .content {
+                            width: auto;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            .one {
+                                width: 55%;
+                                display: flex;
+                                justify-content: space-between;
+
+                                h1 {
+                                    font-size: 2rem;
+                                    font-family: Hind Siliguri;
+                                    color: #fff;
+                                }
+
+                                i {
+                                    font-size: 2rem;
+                                    color: #fff;
+                                }
+                            }
+
+                            .two {
+                                ul {
+                                    li {
+                                        margin: 1rem 0;
+                                        color: #fff;
+                                        font-family: Hind Siligur;
+                                        font-size: 1.7rem;
+                                    }
+                                }
                             }
                         }
                     }

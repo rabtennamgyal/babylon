@@ -113,6 +113,30 @@ const Bank = () => {
                                     </h1>
                                     <i class="fas fa-plus"></i>
                                 </div>
+                                <div className='content'>
+                                    <div className='one'>
+                                        <i class="fas fa-chart-line"></i>
+                                        <h1>
+                                            Invest
+                                        </h1>
+                                    </div>
+                                    <div className='two'>
+                                        <ul>
+                                            <li>
+                                                Put your money to work with round-ups
+                                            </li>
+                                            <li>
+                                                Get personalized latest news 
+                                            </li>
+                                            <li>
+                                                Get access to budget trackers
+                                            </li>
+                                            <li>
+                                                Spend money & earn 20% cash back
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
