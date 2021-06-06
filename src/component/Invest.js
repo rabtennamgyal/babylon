@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import img from '../Asset/acct.png'
 
-const Invest = ({openModal}) => {
+const Invest = () => {
     const [right, SetRight] = useState(true)
     const [down, SetDown] = useState(false)
 
@@ -9,6 +9,7 @@ const Invest = ({openModal}) => {
         const text = document.getElementById('tOne')
         if (text.style.display === 'none') {
             text.style.display = 'flex'
+            text.classList.add('active')
             SetRight(false)
             SetDown(true)
         } else {
@@ -25,6 +26,7 @@ const Invest = ({openModal}) => {
         const text = document.getElementById('tTwo')
         if (text.style.display === 'none') {
             text.style.display = 'flex'
+            text.classList.add('active')
             SetRight1(false)
             SetDown1(true)
         } else {
@@ -41,6 +43,7 @@ const Invest = ({openModal}) => {
         const text = document.getElementById('tThree')
         if (text.style.display === 'none') {
             text.style.display = 'flex'
+            text.classList.add('active')
             SetRight2(false)
             SetDown2(true)
         } else {
@@ -57,6 +60,7 @@ const Invest = ({openModal}) => {
         const text = document.getElementById('tFour')
         if (text.style.display === 'none') {
             text.style.display = 'flex'
+            text.classList.add('active')
             SetRight3(false)
             SetDown3(true)
         } else {
@@ -73,6 +77,7 @@ const Invest = ({openModal}) => {
         const text = document.getElementById('tFive')
         if (text.style.display === 'none') {
             text.style.display = 'flex'
+            text.classList.add('active')
             SetRight4(false)
             SetDown4(true)
         } else {
