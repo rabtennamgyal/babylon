@@ -8,6 +8,7 @@ const Education = () => {
         const para = document.getElementById('stock')
         if (para.style.display === 'none') {
             para.style.display = 'flex'
+            para.classList.add('active')
             setDown(false)
             setUp(true)
         } else {
@@ -24,6 +25,7 @@ const Education = () => {
         const para = document.getElementById('inflation')
         if (para.style.display === 'none') {
             para.style.display = 'flex'
+            para.classList.add('active')
             setDown1(false)
             setUp1(true)
         } else {
@@ -41,6 +43,7 @@ const Education = () => {
         const para = document.getElementById('start')
         if (para.style.display === 'none') {
             para.style.display = 'flex'
+            para.classList.add('active')
             setDown2(false)
             setUp2(true)
         } else {
@@ -57,6 +60,7 @@ const Education = () => {
         const para = document.getElementById('trade')
         if (para.style.display === 'none') {
             para.style.display = 'flex'
+            para.classList.add('active')
             setDown3(false)
             setUp3(true)
         } else {
@@ -73,6 +77,7 @@ const Education = () => {
         const para = document.getElementById('dividend')
         if (para.style.display === 'none') {
             para.style.display = 'flex'
+            para.classList.add('active')
             setDown4(false)
             setUp4(true)
         } else {
