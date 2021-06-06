@@ -6,6 +6,7 @@ import Invest from './component/Invest'
 import Bank from './component/Bank'
 import Education from './component/Education'
 import Footer from './component/Footer'
+import SignUp from './component/SignUp'
 import { useState } from "react";
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
         </Switch>
         <Switch>
           <Education exact path='/Education'/>
+        </Switch>
+        <Switch>
+          <SignUp exact path='/SignUp'/>
         </Switch>
         <Footer />
       </div>

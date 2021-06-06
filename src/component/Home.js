@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import data from '../Asset/data/imgData'
 import img from '../Asset/123.png'
+import { Link } from 'react-router-dom'
 
 const Home = ({openModal}) => {
     const [current, setCurrent] = useState(0)
@@ -28,9 +29,11 @@ const Home = ({openModal}) => {
                         </h3>
                     </div>
                     <div className='btn'>
-                        <button>
-                            Sign Up
-                        </button>
+                        <Link to='/SignUp'>
+                            <button>
+                                Sign Up
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 

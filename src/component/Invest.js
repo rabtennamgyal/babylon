@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import img from '../Asset/acct.png'
 
 const Invest = () => {
@@ -110,9 +111,11 @@ const Invest = () => {
                                 <i class="fas fa-check"></i><li>See your Performance</li>
                             </div>
                         </ul>
-                        <button>
-                            Get Started
-                        </button>
+                        <Link to='/SignUp'>
+                            <button>
+                                Get Started
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

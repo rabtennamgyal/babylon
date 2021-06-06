@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import {Link} from 'react-router-dom'
 import img from '../Asset/card.png'
 
 const Bank = () => {
@@ -46,9 +47,11 @@ const Bank = () => {
                             We provid two checking accounts. One for your daily expenditure 
                             and the other one to transfer money to your brokerage account.
                         </h2>
-                        <button>
-                            Sign Up
-                        </button>
+                        <Link to='/SignUp'>
+                            <button>
+                                Sing Up
+                            </button>
+                        </Link>
                     </div>
                 </div>
     
