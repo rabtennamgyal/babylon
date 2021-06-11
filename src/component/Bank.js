@@ -49,7 +49,7 @@ const Bank = () => {
                         </h2>
                         <Link to='/SignUp'>
                             <button>
-                                Sing Up
+                                Sign Up
                             </button>
                         </Link>
                     </div>
