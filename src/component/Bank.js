@@ -139,9 +139,11 @@ const Bank = () => {
                                     the premium version, expect the MorningStar
                                     Analysis. Ad supported.
                                 </p>
-                                <button>
-                                    Sign Up
-                                </button>
+                                <Link to='/SignUp'>
+                                    <button>
+                                        Sign Up
+                                    </button>
+                                </Link>
                             </div>
                             <div className='two'>
                                 <div className='title'>
@@ -194,9 +196,11 @@ const Bank = () => {
                                     analysis from the prestigious financial
                                     firm MorningStar. No Ads.
                                 </p>
-                                <button>
-                                    Sign Up
-                                </button>
+                                <Link to='/SignUp'>
+                                    <button>
+                                        Sign Up
+                                    </button>
+                                </Link>
                             </div>
                             <div className='two'>
                                 <div className='title'>

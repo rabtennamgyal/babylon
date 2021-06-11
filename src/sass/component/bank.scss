@@ -251,23 +251,27 @@
                             font-family: Hind Siliguri;
                             color: #fff;
                         }
-    
-                        button {
-                            background-color: #fff;
-                            margin-top: 1rem;
-                            cursor: pointer;
-                            height: 4rem;
-                            width: 60%;
-                            border: none;
-                            outline: none;
-                            border-radius: 20px;
-                            font-size: 1.7rem;
-                            font-family: Fredoka One;
-                            color: $primary-font;
-    
-                            &:hover {
-                                transform: scale(1.1);
-                                transition: 0.7s;
+
+                        a {
+                            width: 20rem;
+                            
+                            button {
+                                background-color: #fff;
+                                margin-top: 1rem;
+                                cursor: pointer;
+                                height: 4rem;
+                                width: 60%;
+                                border: none;
+                                outline: none;
+                                border-radius: 20px;
+                                font-size: 1.7rem;
+                                font-family: Fredoka One;
+                                color: $primary-font;
+        
+                                &:hover {
+                                    transform: scale(1.1);
+                                    transition: 0.7s;
+                                }
                             }
                         }
                     }

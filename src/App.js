@@ -9,6 +9,9 @@ import Footer from './component/Footer'
 import SignUp from './component/SignUp'
 import { useState } from "react";
 
+// helpers
+import ScrollToTop from "./component/helper/scroll";
+
 function App() {
   const [nav, setNav] = useState(false)
 
@@ -31,6 +34,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className='app'>
         <Navbar openNav={openNav} />
         {nav && <NavMobile closeNav={closeNav} />}
