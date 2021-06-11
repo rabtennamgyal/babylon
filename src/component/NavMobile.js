@@ -13,6 +13,8 @@ const NavMobile = ({closeNav}) => {
                     <Link to='/Invest'><li onClick={closeNav}>Investing</li></Link>
                     <Link to='/Bank'><li onClick={closeNav}>Banking</li></Link>
                     <Link to='/Education'><li onClick={closeNav}>Education</li></Link>
+                    <Link to='/LogIn'><li onClick={closeNav}>Log In</li></Link>
+                    <Link to='/SignUp'><li onClick={closeNav}>Sign Up</li></Link>
                 </ul>
             </div>
         </div>

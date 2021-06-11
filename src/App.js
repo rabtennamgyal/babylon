@@ -7,6 +7,7 @@ import Bank from './component/Bank'
 import Education from './component/Education'
 import Footer from './component/Footer'
 import SignUp from './component/SignUp'
+import LogIn from "./component/LogIn";
 import { useState } from "react";
 
 // helpers
@@ -49,6 +50,9 @@ function App() {
         </Switch>
         <Switch>
           <Education exact path='/Education'/>
+        </Switch>
+        <Switch>
+          <LogIn exact path='/LogIn'/>
         </Switch>
         <Switch>
           <SignUp exact path='/SignUp'/>
