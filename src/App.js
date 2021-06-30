@@ -10,7 +10,7 @@ import SignUp from './component/SignUp'
 import LogIn from "./component/LogIn";
 import { useState } from "react";
 
-// helpers
+// helper
 import ScrollToTop from "./component/helper/scroll";
 
 function App() {
